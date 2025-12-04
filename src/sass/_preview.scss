@@ -8,6 +8,9 @@
       transition: all 0.3s;
       border-right: 1px solid #fff;
       text-decoration: none;
+      color: $color-primary;
+      font-family: 'Nunito Sans';
+      font-size: 15px;
     }
 
     &:hover {
