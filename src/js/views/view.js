@@ -47,7 +47,7 @@ export default class view {
             </div> `;
 
     this._clear();
-    this._parentElement.insertAdjacentHTML('afterbegin', markup);
+    this._parentEl.insertAdjacentHTML('afterbegin', markup);
   }
 
   renderSpinner() {
