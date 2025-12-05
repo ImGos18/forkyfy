@@ -1,5 +1,5 @@
 import view from './view';
-import icons from 'url:../../img/icons.svg';
+import icon from 'url:../../img/icons.sprite.svg';
 import { RESULTS_PER_PAGE } from '../config';
 
 class paginationView extends view {
@@ -30,7 +30,7 @@ class paginationView extends view {
           }" class="btn--inline pagination__btn--next">
             <span>Page ${currPage + 1}</span>
             <svg class="search__icon">
-              <use href="${icons}#icon-arrow-right"></use>
+              <use href="${icon}#icon-arrow-right"></use>
             </svg>
           </button>`;
     }
@@ -41,7 +41,7 @@ class paginationView extends view {
             currPage - 1
           }" class="btn--inline  pagination__btn--prev">
             <svg class="search__icon">
-              <use href="${icons}#icon-arrow-left"></use>
+              <use href="${icon}#icon-arrow-left"></use>
             </svg>
             <span>Page ${currPage - 1}</span>
           </button>`;
@@ -53,7 +53,7 @@ class paginationView extends view {
             currPage - 1
           }" class="btn--inline  pagination__btn--prev">
             <svg class="search__icon">
-              <use href="${icons}#icon-arrow-left"></use>
+              <use href="${icon}#icon-arrow-left"></use>
             </svg>
             <span>Page ${currPage - 1}</span>
           </button>
@@ -62,7 +62,7 @@ class paginationView extends view {
           }" class="btn--inline pagination__btn--next">
             <span>Page ${currPage + 1}</span>
             <svg class="search__icon">
-              <use href="${icons}#icon-arrow-right"></use>
+              <use href="${icon}#icon-arrow-right"></use>
             </svg>
           </button>
           `;

@@ -1,4 +1,4 @@
-import icon from 'url:../../img/icons.svg';
+import icon from 'url:../../img/icons.sprite.svg';
 import Fraction from 'fraction.js';
 import view from './view.js';
 
