@@ -10,9 +10,9 @@ import addRecipeView from './views/addRecipeView.js';
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 
-if (module.hot) {
-  module.hot.accept();
-}
+// if (module.hot) {
+//   module.hot.accept();
+// }
 
 async function showRecipe() {
   try {
@@ -35,7 +35,7 @@ async function showRecipe() {
     recipeView.renderError();
   }
 }
-console.log('HI');
+
 async function searchResults() {
   try {
     //1 get search query
@@ -94,7 +94,7 @@ async function controlAddRecipe(newRecipe) {
   try {
     await model.uploadRecipe(newRecipe);
 
-    console.log(model.state.recipe);
+    // console.log(model.state.recipe);
 
     //render uploaded recipe
     recipeView.render(model.state.recipe);
@@ -108,6 +108,7 @@ async function controlAddRecipe(newRecipe) {
 
     //render bookmark view
     bookmarksView.render(model.state.bookmarks);
+    bookmarksView.update(model.state.bookmarks);
 
     //change id in url
     window.history.pushState(null, '', `#${model.state.recipe.id}`);
