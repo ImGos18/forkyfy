@@ -2,10 +2,12 @@
   "name": "forkify",
   "version": "1",
   "description": "Recipe Aplication",
+  "default": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html --public-url ./"
   },
   "keywords": [],
   "author": "Gustavo Soler",
